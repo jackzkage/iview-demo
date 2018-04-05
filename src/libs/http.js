@@ -13,7 +13,7 @@ const ajaxUrl = env === 'development' ?
         'https://www.url.com' :
         'https://debug.url.com';
 
-var instance = axios.create({
+const instance = axios.create({
     baseURL: ajaxUrl,
     timeout: 30000
 });
@@ -51,8 +51,7 @@ instance.interceptors.response.use(function (response) {
     }
     return response;
 }, function (error) {
-
-    iView.Message.error(error);
+    iView.Message.error(error.message);
     if (error.response) {
         switch (error.response.status) {
             case 401:
