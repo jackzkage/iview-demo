@@ -1,0 +1,149 @@
+.layout {
+  background: #f5f7f9;
+  position: relative;
+  overflow: hidden;
+}
+
+.layout-logo {
+  width: 70px;
+  height: 60px;
+  float: left;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: @primary-color url("http://boss.kpkj.org/portal/public-statics/hplus/img/LOGO_KP.png") no-repeat center center;
+
+}
+
+.layout-nav {
+  width: auto;
+  margin: 0;
+  border: 0;
+
+}
+
+.ivu-layout-header {
+  padding: 0;
+  height: 60px;
+}
+
+.ivu-menu-horizontal.ivu-menu-light:after {
+  height: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.layout-con {
+  height: 100%;
+  width: 100%;
+}
+
+.menu-item span {
+  display: inline-block;
+  overflow: hidden;
+  width: 69px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+  transition: width .2s ease .2s;
+}
+
+.menu-item i {
+  transform: translateX(0px);
+  transition: font-size .2s ease, transform .2s ease;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.collapsed-menu span {
+  width: 0px;
+  transition: width .2s ease;
+}
+
+.collapsed-menu i {
+  transform: translateX(5px);
+  transition: font-size .2s ease .2s, transform .2s ease .2s;
+  vertical-align: middle;
+  font-size: 22px;
+}
+
+.collapsed-menu.ivu-menu-vertical .ivu-menu-item{
+  padding: 18px 20px;
+  background: #495060;
+}
+
+
+
+
+
+.collapsed-menu.ivu-menu-vertical .ivu-menu-item span {
+  display: none;
+}
+
+.index-submenu {
+  width: 210px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ivu-menu-light.ivu-menu-horizontal .ivu-menu-item-active, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item:hover, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu-active, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu:hover {
+  border: 0px;
+  height: 60px;
+}
+
+.ivu-menu-light.ivu-menu-horizontal .ivu-menu-item, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu {
+  border-bottom: 0;
+}
+
+.ivu-menu-light.ivu-menu-horizontal .ivu-menu-item-active, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-item:hover, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu-active, .ivu-menu-light.ivu-menu-horizontal .ivu-menu-submenu:hover {
+  border-bottom: 0;
+}
+.ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu), .ivu-menu-dark.ivu-menu-vertical .ivu-menu-submenu-title-active:not(.ivu-menu-submenu) {
+  border-right: 0;
+}
+.main-header {
+  border-bottom: 1px solid #f3f3f3;
+  height: 60px;
+}
+
+.header-avator-con {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 220px;
+}
+
+.ivu-menu-vertical.ivu-menu-light:after {
+  width: 0px;
+}
+
+.main-content {
+  border-left: 1px solid #f3f3f3;
+  left: 280px;
+
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background-color: #F0F0F0;
+  z-index: 1;
+  transition: left .3s;
+
+}
+
+
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) a.router-link-active {
+  color: @primary-color;
+}
+
+.ivu-table th {
+  border-bottom: 2px solid @primary-color;
+}
+
+
